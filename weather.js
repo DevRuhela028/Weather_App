@@ -8,7 +8,7 @@ let prec = document.getElementById('prec')
 let humid = document.getElementById('humidity')
 let wind = document.getElementById('wind')
 async function getdata(city){
-    const promise = await fetch(`http://api.weatherapi.com/v1/current.json?key=e857b69a0de34dac88b113333240703&q=${city}&aqi=yes`);
+    const promise = await fetch(`https://api.weatherapi.com/v1/current.json?key=e857b69a0de34dac88b113333240703&q=${city}&aqi=yes`);
     return await promise.json();
 }
 ele1.addEventListener('click',async () => {
